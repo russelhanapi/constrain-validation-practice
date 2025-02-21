@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <title>Form Validation</title>
+  </head>
+  <body>
+    <!-- Email, Country, Postal Code, Password and Password Confirmation fields. -->
+    <div class="form-container">
+      <form class="form" action="" novalidate>
+        <div>
+          <label for="email">Email</label
+          ><input type="email" id="email" name="user_email" placeholder="johndoe@email.com" />
+        </div>
+        <div>
+          <label for="country">Country</label><input type="text" id="country" name="user_country" placeholder="USA" />
+        </div>
+        <div>
+          <label for="postal">Postal Code</label
+          ><input type="number" id="postal" name="user_postal" placeholder="73001" />
+        </div>
+        <div>
+          <label for="password">Password</label><input type="password" id="password" name="user_password" min="8" />
+        </div>
+        <div><label for="confirm-password">Confirm Password</label><input type="password" id="confirm-password" /></div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
